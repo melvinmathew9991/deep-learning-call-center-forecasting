@@ -50,7 +50,7 @@ This started as an unmodified tutorial-style repo with several real bugs, since 
 - **Candidate A** — national total calls/month, 128 months (Aug 2010–Mar 2021), single clean column, closest drop-in replacement for `Healthcare`. Caveat: first ~2.5 years are near-zero (national rollout, not real demand), which would distort the scaler's range — recommended trimming to ~2013 onward (~99 months) before use.
 - **Candidate B** — 5 NHS 111 regional provider areas as parallel columns (mirrors the current file's 5-sector layout), 98 months (Feb 2013–Mar 2021).
 - Recommendation given: trimmed Candidate A, because only one column is ever actually modeled — B's multi-column structure doesn't improve the thing that matters (the single modeled series), while A's regime-change confound is a simple trim.
-- Repo was not a git repo as of this work (about to be initialized/pushed). `.venv/`, `__pycache__/`, `output/` contents, and `.claude/settings.local.json` are all gitignored. No secrets found in a scan.
+- Repo is now on GitHub, public: https://github.com/melvinmathew9991/deep-learning-call-center-forecasting (`git init` + first commit + push done 2026-07-11; root commit `cd5bfbd`, branch `main` tracking `origin/main`, verified by comparing local `HEAD` to `git ls-remote` and by checking the live GitHub page). `.venv/`, `__pycache__/`, `output/` contents, and `.claude/settings.local.json` are all gitignored. No secrets found in a scan.
 
 ## Working with this user
 
